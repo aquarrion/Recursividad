@@ -54,4 +54,12 @@ public class Ejercicio {
         }
         return suma;
     }
+
+    //INVERTIR PALABRA
+    public static String invertirPalabra(String palabra){
+        if (palabra.length() == 1){
+            return palabra;
+        }
+        return invertirPalabra(palabra.substring(1)) + palabra.charAt(0);
+    }
 }
